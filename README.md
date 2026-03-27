@@ -1,7 +1,8 @@
 # CookBook 🍽️
 
-## Estudiante
+## Estudiantes
 Neider Uribe Valencia
+
 Juan Camilo Molina
 
 ## Descripción
