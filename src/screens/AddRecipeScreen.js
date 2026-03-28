@@ -21,9 +21,11 @@ import { TextInput, View, Text, TouchableOpacity, KeyboardAvoidingView, Platform
 
     const handleSave = () =>{
         if(!validateInputs()) return;
+
+        const ingredientsList = ingredients.split(',').map(i => i.trim());
         Alert.alert(
             'Resumen de la receta',
-            `Nombre: ${recipeName}\nCategoria: ${category}\nTiempo: ${preparationTime}\nDificultad: ${difficulty}\nIngredientes: ${ingredients}`
+            `Nombre: ${recipeName}\nCategoria: ${category}\nTiempo: ${preparationTime}\nDificultad: ${difficulty}\nIngredientes:\n• ${ingredientsList.join('\n• ')}`
         )
     }
     const handleClear = () =>{
@@ -92,7 +94,7 @@ import { TextInput, View, Text, TouchableOpacity, KeyboardAvoidingView, Platform
                     style={styles.input}
                     value={ingredients}
                     onChangeText={setIngredients}
-                    placeholder='ingredientes'
+                    placeholder='ingredientes Ej: tomate, cebolla, ajo'
                 />
                 {errors.ingredients ? <Text>{errors.ingredients}</Text>: null}                
                 <TouchableOpacity 
