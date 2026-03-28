@@ -100,13 +100,13 @@ import { TextInput, View, Text, TouchableOpacity, KeyboardAvoidingView, Platform
                     onPress={handleSave}
                     disabled={!isFormValid}
                 >
-                    <Text>Guardar Receta</Text>
+                    <Text style={styles.buttonText}>Guardar Receta</Text>
                 </TouchableOpacity>
                 <TouchableOpacity 
                     style={styles.clearButton}
                     onPress={handleClear}
                 >
-                    <Text>Limpiar</Text>
+                    <Text style={styles.buttonText}>Limpiar</Text>
                 </TouchableOpacity>
                 </View>
             </KeyboardAvoidingView>

@@ -4,7 +4,10 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: '#F8F4F0'
     },
-    innerContainer:{},
+    innerContainer:{
+        flex: 1,
+        padding:20,
+    },
     title:{
         fontSize:24,
         fontWeight: 'bold',
